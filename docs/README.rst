@@ -1,5 +1,7 @@
 .. _readme:
 
+This is wip. Contributions are welcome.
+
 homeassistant-formula
 ================
 
