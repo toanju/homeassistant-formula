@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 # vim: ft=yaml
 ---
-TEMPLATE:
+homeassistant:
   pkg:
-    name: TEMPLATE
+    name: homeassistant
   rootgroup: root
-  config: '/etc/TEMPLATE'
+  config: '/etc/homeassistant'
   service:
-    name: TEMPLATE
+    name: homeassistant
   subcomponent:
-    config: '/etc/TEMPLATE-subcomponent-formula.conf'
+    config: '/etc/homeassistant-subcomponent-formula.conf'
   # Just here for testing
   added_in_defaults: defaults_value
   winner: defaults

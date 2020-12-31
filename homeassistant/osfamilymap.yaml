@@ -12,25 +12,25 @@
 ---
 Debian:
   pkg:
-    name: TEMPLATE-debian
-  config: /etc/TEMPLATE.d/custom.conf
+    name: homeassistant-debian
+  config: /etc/homeassistant.d/custom.conf
 
 RedHat:
   pkg:
-    name: TEMPLATE-redhat
-  config: /etc/TEMPLATE.conf
+    name: homeassistant-redhat
+  config: /etc/homeassistant.conf
 
 Suse:
   pkg:
-    name: TEMPLATE-suse
+    name: homeassistant-suse
 
 Gentoo:
   pkg:
-    name: TEMPLATE-gentoo
+    name: homeassistant-gentoo
 
 Arch:
   pkg:
-    name: TEMPLATE-arch
+    name: homeassistant-arch
   service:
     name: service-arch
 
