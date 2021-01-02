@@ -2,14 +2,29 @@
 # vim: ft=yaml
 ---
 homeassistant:
+  install_from_src: True
   pkg:
+    name: python3-homeassistant
+  src:
     name: homeassistant
-  rootgroup: root
+    pkgs:
+      - python3
+      - python3-devel
+      - python3-pip
+      - libffi-devel
+      - gcc
+      - python3-virtualenv
+      - zlib-devel
+      - libjpeg-devel
+      # official debian requirements pkgs tranlated to Fedora:
+      # python3 python3-devel python3-pip libffi-devel openssl-devel libjpeg-devel zlib-devel autoconf openjpeg2 libtiff gcc
+    groups:
+      - dialout
+      #- gpio
+      #- i2c
+
+  user: homeassistant
+  homedir: '/srv/homeassistant'
   config: '/etc/homeassistant'
   service:
     name: homeassistant
-  subcomponent:
-    config: '/etc/homeassistant-subcomponent-formula.conf'
-  # Just here for testing
-  added_in_defaults: defaults_value
-  winner: defaults
