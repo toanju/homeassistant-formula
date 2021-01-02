@@ -19,7 +19,7 @@ homeassistant-config-file-file-managed:
               }}
     - mode: 644
     - user: root
-    - group: {{ homeassistant.rootgroup }}
+    #    - group: {#{ homeassistant.rootgroup }#}
     - makedirs: True
     - template: jinja
     - require:

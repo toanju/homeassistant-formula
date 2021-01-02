@@ -49,7 +49,7 @@
 {%- set homeassistant = config %}
 
 {#- Post-processing for specific non-YAML customisations #}
-{%- if grains.os == 'MacOS' %}
-{%-   set macos_group = salt['cmd.run']("stat -f '%Sg' /dev/console") %}
-{%-   do homeassistant.update({'rootgroup': macos_group}) %}
-{%- endif %}
+{#- if grains.os == 'MacOS' #}
+{#-   set macos_group = salt['cmd.run']("stat -f '%Sg' /dev/console") #}
+{#-   do homeassistant.update({'rootgroup': macos_group}) #}
+{#- endif #}
